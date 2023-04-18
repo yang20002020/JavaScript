@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<!--
+   普通方式
+   普通方式，除非全部字符不符合正则，返回false
+   只要有一个字符符合正则，就会返回true
+-->
+
+<body>
+    <script>
+        var reg = /\s+$/; //1到多个空格
+        var flag = reg.test(""); 
+        alert(flag);  //false
+        var flag1 = reg.test("   ");
+        alert(flag1);  //true
+        var flag2 = reg.test("   a   ");
+        alert(flag2);   //true
+    </script>
+</body>
+
+</html>
