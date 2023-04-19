@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var str = "10.55";
+        var num1 = parseInt(str); // 并不会四舍五入
+        var num2 = parseFloat(str);
+        alert(typeof (num1) + ":" + num1); // number:10
+        alert(typeof (num2) + ":" + num2);  // number:10.55
+        //如果字符串的某个字符从字面值上无法转为数字，那么从该字符开始停止转换，仅返回前面正确的转换值。
+        // 
+        var str1 = "10.55a";
+        var num3 = parseInt(str1);
+        var num4 = parseFloat(str1);
+        alert(typeof (num3) + ":" + num3); // number:10
+        alert(typeof (num4) + ":" + num4);  // number:10.55
+        var str2 = "10.5a5";
+        var num5 = parseInt(str2);
+        var num6 = parseFloat(str2);
+        alert(typeof (num5) + ":" + num5); // number:10
+        alert(typeof (num6) + ":" + num6);  // number:10.5
+
+        //如果字符串的某个字符从字面值上无法转为数字，那么从该字符开始停止转换，仅返回前面正确的转换值
+        // 例如：11.5a55.paseInt 结果是11，parseFloat 结果11.5
+        var str3 = "1a0.55";
+        var num5 = parseInt(str3);
+        var num6 = parseFloat(str3);
+        alert(typeof (num5) + ":" + num5); // number:1
+        alert(typeof (num6) + ":" + num6);  // number:1
+
+        //NaN  (Not A Number) 不是一个数字
+        //是一个数字类型的标识，专门标识当前的值，不是数字
+        var str3 = "a10.55";
+        var num7 = parseInt(str3);
+        var num8 = parseFloat(str3);
+        alert(typeof (num7) + ":" + num7); // number:NaN
+        alert(typeof (num8) + ":" + num8);  // number:NaN
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
