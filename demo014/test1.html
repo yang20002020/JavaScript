@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    js函数若同名，则不存在方法重载，只有方法相互覆盖，最后定义的函数覆盖前面的函数。
+    
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getSum(a, b) {
+            alert(a + "-" + b);
+        }
+        function getSum(a, b, c) {
+            alert(a + "-" + b + "-" + c);   // 1-2-undefined
+        }
+        var result = getSum(1, 2);
+        alert(result);      //undefined
+
+
+        function getSum1(a, b, c) {
+            alert(a + "-" + b + "-" + c);
+        }
+        function getSum1(a, b) {
+            alert(a + "-" + b);      //1-2
+        }
+        var result = getSum1(1, 2, 3);
+        alert(result); // undefined   调用的是最后一个函数
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

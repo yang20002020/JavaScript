@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //参数 不需要添加var
+        function sumAdd(a,b){
+            return a+b;
+        }
+        var result = sumAdd(1, 2);
+        alert(result);
+
+        function sumAdd1(a, b) {
+                return;
+        }
+        var result = sumAdd1(1, 2);
+        alert(result); //undefined
+        function sumAdd1(a, b) {
+                
+        }
+        var result = sumAdd1(1, 2);
+        alert(result); //undefined
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
