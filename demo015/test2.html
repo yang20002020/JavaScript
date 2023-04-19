@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //属性定义方式
+        //1.this 关键字，在对象声明定义阶段，定义一个属性
+        function Person(n, a) {
+            this.name = n;
+            this.age = a;
+        }
+        var p = new Person("小王", "20");
+        alert(p.name); 
+        alert(p.age);
+        p.name = "小李";
+        alert(p.name);
+        //2.创建对象后，使用对象.属性方式  动态定义属性
+        p.sex = "男";
+        alert(p.sex);  //男
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
