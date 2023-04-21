@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   注意：获取某个元素的节点对象，必须保证元素节点对象先被加载到内存中
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        文本框 元素节点对象还没有被加载，内存中没有对应的内容t1；
+    -->
+    <script>
+        var t1 = document.getElementById("t1");
+        alert(t1); //null
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1">
+    <!--下述 转移到上面的位置
+    <script>
+        var t1 = document.getElementById("t1");
+        alert(t1); //[object HTMLInputElement]
+    </script>
+    -->
+
+</body>
+
+</html>
