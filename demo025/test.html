@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span id="s1"> 今天天气好晴朗</span>
+    <script>
+        //想要获取span标签的内容体
+        var s1 = document.getElementById("s1");
+        alert(s1.innerHTML); //今天天气好晴朗
+        //设置span 标签的内容体 
+        s1.innerHTML="今天天气有雾霾并且有冷雨";
+    </script>
+</body>
+
+</html>
