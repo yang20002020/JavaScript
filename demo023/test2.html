@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ys1{
+            color:red;
+        }
+        .ys2{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="s1" class="ys1">今天天气好晴朗</span>
+    <script>
+        //需要把s1 元素value属性值，拿出来
+        var s1 = document.getElementById("s1");
+        //className 修改元素的样式
+        alert(s1.className); 
+        s1.className="ys2";  //点击确定后， 红色字体变为蓝色
+    </script>
+
+</body>
+
+</html>
