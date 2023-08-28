@@ -36,7 +36,7 @@
     //3. 使所有的复选框呈现选中状态
     var ins = document.getElementsByName('hobby');
     for (let i = 0; i < ins.length; i++) {
-        const check = ins[i];
+        const check = ins[i];  // check 是对象  checked 是属性
         console.log(check);
         check.checked = true;//选中
     }
