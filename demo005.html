@@ -9,14 +9,18 @@
     <title>Document</title>
     <script>
         var str1 = "你好";
-        alert(typeof(str1))  // 打印string
-        str1=10;  //弱类型语言 
-        alert(typeof(str1));  //打印number
-        str1=true;
+        alert(typeof (str1))  // 打印string
+        str1 = 10;  //弱类型语言 
+        alert(typeof (str1));  //打印number
+        str1 = true;
         alert(typeof (str1)); //打印 boolean
-        str1=null;
+        str1 = null;
         alert(str1);
         alert(typeof (str1));  //null是基本数据类型 注意 ：打印 object
+
+        //未定义类型
+        let num
+        console.log(num); //undefined
 
     </script>
 </head>
